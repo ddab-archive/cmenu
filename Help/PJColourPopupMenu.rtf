@@ -1,0 +1,692 @@
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057
+{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}{\f2\fmodern Courier New;}{\f3\fmodern \fcharset0 Courier New;}}
+{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue255;}
+#{\footnote {#}IDH_CPM_CLASS}
+${\footnote {$}TPJColourPopupMenu}
+K{\footnote {K}TPJColourPopupMenu}
+A{\footnote {A}TPJColourPopupMenu;TPJColourPopupMenu_object}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \{bmlt PJColourPopupMenu.bmp\}\plain\f0\fs22\cf2\b  TPJColourPopupMenu\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\ul Heirachy}{\v IDH_CPM_HEIRACHY}          {\ul Properties}{\v IDH_CPM_PROPERTIES}          {\ul Methods}{\v IDH_CPM_METHODS}          {\ul Events}{\v IDH_CPM_EVENTS}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard TPJColourPopupMenu is a pop-up menu component that displays the sixteen basic Windows colours as a menu or as a colour palette.
+\par 
+\par \plain\f0\fs18\cf0\b Unit\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 PJColourPopupMenu
+\par 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 This component provides a pop-up menu that displays the sixteen basic Windows colours in a user defined way according to the DisplayStyle property - either as a list of colour names (with or without colour swatches) or as a colour palette. The programmer can further customise the display of the colours by setting the OwnerDraw property to true and controlling the painting of the menu. The MenuColumns property determines whether the menu is displayed as a single column, or in 2, 4 or 8 columns. The colour selected by the user is given by the SelectedColour property.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 At design time the main component properties can be set using the {\strike Colour menu designer}{\v IDH_CPM_CE}. This is accessed by double clicking the component\plain\f1\fs18\cf0  \plain\f0\fs18\cf0 or \plain\f1\fs18\cf0 by\plain\f0\fs18\cf0  selecting \plain\f0\fs18\cf0\i Colour menu designer\plain\f0\fs18\cf0  from the component's context menu.
+\par \page 
+#{\footnote {#}IDH_CPM_HEIRACHY}
+${\footnote {$}TPJColourPopupMenu heirachy}
+
+\pard \plain \plain\f0\fs18\cf0\b Heirachy\plain\f0\fs18\cf0 
+\par 
+\par {\strike TObject}{\v !AL(TObject_object,1)}
+\par     |
+\par {\strike TPersistent}{\v !AL(TPersistent_object,1)}
+\par     |
+\par {\strike TComponent}{\v !AL(TComponent_object,1)}
+\par     |
+\par {\strike TMenu}{\v !AL(TMenu_object,1)}
+\par     |
+\par {\strike TPopupMenu}{\v !AL(TPopupMenu_object,1)}
+\par \page 
+#{\footnote {#}IDH_CPM_PROPERTIES}
+${\footnote {$}TPJColourPopupMenu properties}
+
+\pard \plain \plain\f0\fs18\cf0\b Properties\plain\f0\fs18\cf0 
+\par 
+\par \pard \tx200 \tx2000 \tx2200 \tx4000 \tx4200 \tab {\strike Alignment}{\v !AL(TPopupMenu_Alignment,1)}\tab \tab {\strike AutoPopup}{\v !AL(TPopupMenu_AutoPopup,1)}\tab \tab {\strike BiDiMode}{\v !AL(TMenu_BiDiMode,1)}
+\par \tab {\strike BitmapHeight}{\v IDH_CPM_BITMAPHEIGHT}\tab \tab {\strike BitmapWidth}{\v IDH_CPM_BITMAPWIDTH}\tab \tab {\strike CheckSelectedColour}{\v IDH_CPM_CHECKSELECTEDCOLOUR}
+\par \tab {\strike DisplayStyle}{\v IDH_CPM_DISPLAYSTYLE}\tab >\tab {\strike Handle}{\v !AL(TMenu_Handle,1)}\tab \tab {\strike HelpContext}{\v !AL(TPopupMenu_HelpContext,1)}
+\par \tab {\strike Images}{\v IDH_CPM_IMAGES}\tab \tab {\strike Items}{\v IDH_CPM_ITEMS}\tab \tab {\strike MenuColumns}{\v IDH_CPM_MENUCOLUMNS}
+\par \tab {\strike Name}{\v !AL(TComponent_Name,1)}\tab \tab {\strike OwnerDraw}{\v IDH_CPM_OWNERDRAW}\tab \tab {\strike ParentBiDiMode}{\v !AL(TMenu_ParentBiDiMode,1)}
+\par >\tab {\strike PopupComponent}{\v !AL(TPopupMenu_PopupComponent,1)}\tab \tab {\strike SelectedColour}{\v IDH_CPM_SELECTEDCOLOUR}\tab \tab {\strike Tag}{\v !AL(TComponent_Tag,1)}
+\par >\tab {\strike WindowHandle}{\v !AL(TMenu_WindowHandle,1)}
+\par 
+\par plus \plain\f1\fs18\cf0 any other\plain\f0\fs18\cf0  run time properties inherited from {\strike TPopupMenu}{\v !AL(TPopupMenu_object,1)}.
+\par 
+\par >\tab = run time only.
+\par \page 
+#{\footnote {#}IDH_CPM_BITMAPHEIGHT}
+${\footnote {$}TPJColourPopupMenu.BitmapHeight}
+K{\footnote {K}BitmapHeight,TPJColourPopupMenu;TPJColourPopupMenu,BitmapHeight;BitmapHeight}
+A{\footnote {A}TPJColourPopupMenu_BitmapHeight;BitmapHeight_property;BitmapHeight}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.BitmapHeight\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}          {\strike See also}{\v !AL(TPJColourPopupMenu_BitmapWidth;TPJColourPopupMenu_DisplayStyle)}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard The height of the colour bitmap in a palette style colour pop-up menu.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  BitmapHeight: Integer;\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 This property determines the height of the bitmap used to display a colour on the pop-up menu. The value is ignored unless the {\strike DisplayStyle}{\v IDH_CPM_DISPLAYSTYLE} property \plain\f1\fs18\cf0 is set to\plain\f0\fs18\cf0  dsColourOnly. The default value is 9.
+\par \page 
+#{\footnote {#}IDH_CPM_BITMAPWIDTH}
+${\footnote {$}TPJColourPopupMenu.BitmapWidth}
+K{\footnote {K}BitmapWidth,TPJColourPopupMenu;TPJColourPopupMenu,BitmapWidth;BitmapWidth}
+A{\footnote {A}TPJColourPopupMenu_BitmapWidth;BitmapWidth_property;BitmapWidth}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.BitmapWidth\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}          {\strike See also}{\v !AL(TPJColourPopupMenu_BitmapHeight;TPJColourPopupMenu_DisplayStyle)}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard The width of the colour bitmap in a palette style colour pop-up menu.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  BitmapWidth: Integer;\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 This property determines the width of the bitmap used to display a colour on the pop-up menu. The value is ignored unless the {\strike DisplayStyle}{\v IDH_CPM_DISPLAYSTYLE} property \plain\f1\fs18\cf0 is set to\plain\f0\fs18\cf0  dsColourOnly. The default value is 9.
+\par 
+\par \page 
+#{\footnote {#}IDH_CPM_CHECKSELECTEDCOLOUR}
+${\footnote {$}TPJColourPopupMenu.CheckSelectedColour}
+K{\footnote {K}CheckSelectedColour,TPJColourPopupMenu;TPJColourPopupMenu,CheckSelectedColour;CheckSelectedColour}
+A{\footnote {A}TPJColourPopupMenu_CheckSelectedColour;CheckSelectedColour_property;CheckSelectedColour}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.CheckSelectedColour\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}          {\strike See also}{\v !AL(TPJColourPopupMenu_SelectedColour)}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Causes the current colour to be checked on the menu.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  CheckSelectedColour: Boolean;\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 When true the current colour is checked (or highlighted) in the menu. The current colour is the value of the {\strike SelectedColour}{\v IDH_CPM_SELECTEDCOLOUR} property at the time the menu is displayed.
+\par \page 
+#{\footnote {#}IDH_CPM_DISPLAYSTYLE}
+${\footnote {$}TPJColourPopupMenu.DisplayStyle}
+K{\footnote {K}DisplayStyle,TPJColourPopupMenu;TPJColourPopupMenu,DisplayStyle;DisplayStyle}
+A{\footnote {A}TPJColourPopupMenu_DisplayStyle;DisplayStyle_property;DisplayStyle}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.DisplayStyle\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}          {\strike See also}{\v !AL(TPJColourPopupMenu_OnMeasureMenuItem;TPJColourPopupMenu_OnDrawMenuItem;TPJColourPopupMenu_OwnerDraw)}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard The style in which the menu is displayed.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TPJColourMenuDisplayStyle = (dsTextOnly, dsColourOnly, 
+\par   dsBoth, dsOwnerDraw);
+\par 
+\par \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  DisplayStyle: {\strike TPJColourMenuDisplayStyle}{\v IDH_TPJCOLOURMENUDISPLAYSTYLE};\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 The DisplayStyle property determines the style used to display the colours on the menu. The possible values are:
+\par \plain\f0\fs8\cf0 
+\par \pard \fi-1600 \li1600 \tx1600 \plain\f0\fs18\cf0\b Value\tab Meaning\plain\f0\fs18\cf0 
+\par \pard \fi-1600 \li1600 \tx1600 \brdrt \brdrs \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \fi-1600 \li1600 \tx1600 \plain\f0\fs18\cf0\i dsTextOnly\plain\f0\fs18\cf0 \tab Displays only the names of the colours
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0\i dsColourOnly\plain\f0\fs18\cf0 \tab Displays only the colours - use this style to display a palette of colours
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0\i dsBoth\plain\f0\fs18\cf0 \tab Displays both a small rectangle of colour and the name of the colour
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0\i dsOwnerDraw\plain\f0\fs18\cf0 \tab User draws menu items - sizing and drawing of menu items takes place in {\strike OnMeasureMenuItem}{\v IDH_CPM_ONMEASUREMENUITEM} and {\strike OnDrawMenuItem}{\v IDH_CPM_ONDRAWMENUITEM} events. Use this style to display the menu in a style that is not provided by TPJColourPopupMenu.
+\par \pard \brdrb \brdrs \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 The default value is dsBoth.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 When DisplayStyle is set to dsOwnerDraw the {\strike OwnerDraw}{\v IDH_CPM_OWNERDRAW} property is \plain\f1\fs18\cf0 automatically \plain\f0\fs18\cf0 set to True, otherwise it is False. Setting OwnerDraw to True causes the value of DisplayStyle to be set to dsOwnerDraw.
+\par \page 
+#{\footnote {#}IDH_CPM_IMAGES}
+${\footnote {$}TPJColourPopupMenu.Images}
+K{\footnote {K}Images,TPJColourPopupMenu;TPJColourPopupMenu,Images;Images}
+A{\footnote {A}TPJColourPopupMenu_Images;Images_property;Images}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.Images\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Lists the images that can appear beside individual menu items.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  Images: {\strike TImageList}{\v !AL(TImageList,1)};\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Use Images to hold the set of images that can appear beside menu items in the menu. To \plain\f1\fs18\cf0 do this\plain\f0\fs18\cf0  the menu items that are used to display the colour menu must have their ImageIndex properties set to the required values. Since direct access to menu items is prohibited the only way to do this is to set the ImageIndex properties in the component's {\strike OnCreateMenuItem}{\v IDH_CPM_ONCREATEMENUITEM} event handler.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 When the DisplayStyle property is dsColourOnly then the images in the list are i\plain\f1\fs18\cf0 gn\plain\f0\fs18\cf0 ored. When DisplayStyle is dsBoth then the images from the \plain\f1\fs18\cf0 image \plain\f0\fs18\cf0 list are used in place of the colours that usually appear in the menu.
+\par \page 
+#{\footnote {#}IDH_CPM_ITEMS}
+${\footnote {$}TPJColourPopupMenu.Items}
+K{\footnote {K}Items,TPJColourPopupMenu;TPJColourPopupMenu,Items;Items}
+A{\footnote {A}TPJColourPopupMenu_Items;Items_property;Items}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.Items\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}          {\strike See also}{\v !AL(TPJColourPopupMenu_OnCreateMenuItem)}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Not accessible in TPJColourPopupMenu.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  Items: {\strike TMenuItem}{\v !AL(TMenuItem_object,1)}; \plain\f2\fs18\cf0\b default\plain\f2\fs18\cf0 ;\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Do not access this property. An {\strike EPJColourPopupMenu}{\v IDH_ECPM_CLASS} exception is raised if an attempt is made to read the property.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 In ancestor components the Items property gives access to the menu's items. Because TPJColourPopupMenu manages all the menu items on the user's behalf, providing programatic access to them is meaningless (the component recreates the menu items \plain\f1\fs18\cf0 each time it displays, \plain\f0\fs18\cf0 so any changes would be lost).
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0\b Tip\plain\f0\fs18\cf0 : To modify colour menu items write a handler for the {\strike OnCreateMenuItem}{\v IDH_CPM_ONCREATEMENUITEM} event.
+\par \page 
+#{\footnote {#}IDH_CPM_MENUCOLUMNS}
+${\footnote {$}TPJColourPopupMenu.MenuColumns}
+K{\footnote {K}MenuColumns,TPJColourPopupMenu;TPJColourPopupMenu,MenuColumns;MenuColumns}
+A{\footnote {A}TPJColourPopupMenu_MenuColumns;MenuColumns_property;MenuColumns}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.MenuColumns\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Determines the number of columns in menu.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TPJColourMenuColumns = (mc1,  mc2,  mc4,  mc8);
+\par 
+\par \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  MenuColumns: {\strike TPJColourMenuColumns}{\v IDH_TPJCOLOURMENUCOLUMNS};\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Use the MenuColumns property to \plain\f1\fs18\cf0 set\plain\f0\fs18\cf0  the number of columns the menu uses to display all the colours. Either one (mc1), two (mc2), four (mc4) or eight (mc8) columns can be used. The default value is mc1.
+\par \page 
+#{\footnote {#}IDH_CPM_OWNERDRAW}
+${\footnote {$}TPJColourPopupMenu.OwnerDraw}
+K{\footnote {K}OwnerDraw,TPJColourPopupMenu;TPJColourPopupMenu,OwnerDraw;OwnerDraw}
+A{\footnote {A}TPJColourPopupMenu_OwnerDraw;OwnerDraw_property;OwnerDraw}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.OwnerDraw\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}          {\strike See also}{\v !AL(TPJColourPopupMenu_OnMeasureMenuItem;TPJColourPopupMenu_OnDrawMenuItem;TPJColourPopupMenu_DisplayStyle)}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Specifies whether the menu items are drawn by the component or the \plain\f1\fs18\cf0 application\plain\f0\fs18\cf0 .
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  OwnerDraw: Boolean;\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Set OwnerDraw to True to indicate that the application will draw menu items. When OwnerDraw is True, \plain\f1\fs18\cf0 the component\plain\f0\fs18\cf0  \plain\f1\fs18\cf0 triggers\plain\f0\fs18\cf0  an {\strike OnMeasureMenuItem}{\v IDH_CPM_ONMEASUREMENUITEM} and an {\strike OnDrawMenuItem}{\v IDH_CPM_ONDRAWMENUITEM} event when each colour menu item needs to be rendered on screen.  
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 When OwnerDraw is False default drawing takes place according to the present value of the {\strike DisplayStyle}{\v IDH_CPM_DISPLAYSTYLE} property. 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 The value of OwnerDraw is related to the value of DisplayStyle. When DisplayStyle is set to dsOwnerDraw then OwnerDraw is set True and can't be altered. When DisplayStyle is set to any other value then OwnerDraw is set False. Setting OwnerDraw back to True sets DisplayStyle to dsOwnerDraw.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Use OwnerDraw to display the menu i\plain\f1\fs18\cf0 n\plain\f0\fs18\cf0  a style that is not implemented by TPJColourPopupMenu.
+\par \page 
+#{\footnote {#}IDH_CPM_SELECTEDCOLOUR}
+${\footnote {$}TPJColourPopupMenu.SelectedColour}
+K{\footnote {K}SelectedColour,TPJColourPopupMenu;TPJColourPopupMenu,SelectedColour;SelectedColour}
+A{\footnote {A}TPJColourPopupMenu_SelectedColour;SelectedColour_property;SelectedColour}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.SelectedColour\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}          {\strike See also}{\v !AL(TPJColourPopupMenu_CheckSelectedColour)}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard The currently selected colour.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  SelectedColour: {\strike TColor}{\v !AL(TColor,1)};\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 The SelectedColour property stores the colour value relating to the currently selected menu item. Read SelectedColour to find which colour the user selected from the menu. To highlight a colour on the menu, set the SelectedColour property to the required value. When the menu is next displayed the associated menu item will be checked (if {\strike CheckSelectedColour}{\v IDH_CPM_CHECKSELECTEDCOLOUR} is True).
+\par \page 
+#{\footnote {#}IDH_CPM_METHODS}
+${\footnote {$}TPJColourPopupMenu methods}
+
+\pard \plain \plain\f0\fs18\cf0\b Methods\plain\f0\fs18\cf0 
+\par 
+\par \pard \tx200 \tab {\strike Create}{\v IDH_CPM_CREATE}
+\par \tab {\strike Destroy}{\v IDH_CPM_DESTROY}
+\par \tab {\strike Popup}{\v IDH_CPM_POPUP}
+\par \pard 
+\par TPJColourPopupMenu also inherits methods from {\strike TPopupMenu}{\v !AL(TPopupMenu_object,1)}.
+\par \page 
+#{\footnote {#}IDH_CPM_CREATE}
+${\footnote {$}TPJColourPopupMenu.Create}
+K{\footnote {K}Create,TPJColourPopupMenu;TPJColourPopupMenu,Create;Create}
+A{\footnote {A}TPJColourPopupMenu_Create;Create_method;Create}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.Create\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Creates an instance of TPJColourPopupMenu.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b constructor\plain\f2\fs18\cf0  Create(AOwner: {\strike TComponent}{\v !AL(TComponent_object,1)}); \plain\f2\fs18\cf0\b override\plain\f2\fs18\cf0 ;\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Call Create to create a colour pop-up menu at runtime. Colour pop-up menus placed in forms or data modules at design time are created automatically.\plain\f0\fs20\cf0 
+\par \page 
+#{\footnote {#}IDH_CPM_DESTROY}
+${\footnote {$}TPJColourPopupMenu.Destroy}
+K{\footnote {K}Destroy,TPJColourPopupMenu;TPJColourPopupMenu,Destroy;Destroy}
+A{\footnote {A}TPJColourPopupMenu_Destroy;Destroy_method;Destroy}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.Destroy\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Destroys an instance of TPJColourPopupMenu.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b destructor\plain\f2\fs18\cf0  Destroy; \plain\f2\fs18\cf0\b override\plain\f2\fs18\cf0 ;
+\par \pard \plain\f0\fs18\cf0 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Do not call Destroy directly in an application. Instead, call Free. Free verifies that the pop-up menu is not already freed, and only then calls Destroy.\plain\f0\fs20\cf0 
+\par \page 
+#{\footnote {#}IDH_CPM_POPUP}
+${\footnote {$}TPJColourPopupMenu.Popup}
+K{\footnote {K}Popup,TPJColourPopupMenu;TPJColourPopupMenu,Popup;Popup}
+A{\footnote {A}TPJColourPopupMenu_Popup;Popup_method;Popup}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.Popup\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Displays the colour pop-up menu onscreen.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b procedure\plain\f2\fs18\cf0  Popup(X, Y: Integer); \plain\f3\fs18\cf0\b override\plain\f2\fs18\cf0 ;\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Call Popup to bring up the colour pop-up menu. The menu appears at the screen coordinates indicated by the values (in pixels) of X and Y. 
+\par \page 
+#{\footnote {#}IDH_CPM_EVENTS}
+${\footnote {$}TPJColourPopupMenu events}
+
+\pard \plain \plain\f0\fs18\cf0\b Events\plain\f0\fs18\cf0 
+\par 
+\par \pard \tx200 \tab {\strike OnChange}{\v IDH_CPM_ONCHANGE}
+\par \tab {\strike OnCreateMenuItem}{\v IDH_CPM_ONCREATEMENUITEM}
+\par \tab {\strike OnDrawMenuItem}{\v IDH_CPM_ONDRAWMENUITEM}
+\par \tab {\strike OnMeasureMenuItem}{\v IDH_CPM_ONMEASUREMENUITEM}
+\par \tab {\strike OnPopup}{\v IDH_CPM_ONPOPUP}
+\par \tab {\strike OnSelectColour}{\v IDH_CPM_ONSELECTCOLOUR}
+\par \page 
+#{\footnote {#}IDH_CPM_ONCHANGE}
+${\footnote {$}TPJColourPopupMenu.OnChange}
+K{\footnote {K}OnChange,TPJColourPopupMenu;TPJColourPopupMenu,OnChange;OnChange}
+A{\footnote {A}TPJColourPopupMenu_OnChange;OnChange_event;OnChange}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.OnChange\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Event never occurs in TPJColourPopupMenu.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TMenuChangeEvent = \plain\f2\fs18\cf0\b procedure\plain\f2\fs18\cf0  (Sender: TObject; 
+\par   Source: {\strike TMenuItem}{\v !AL(TMenuItem_object,1)}; Rebuild: Boolean) \plain\f2\fs18\cf0\b of object\plain\f2\fs18\cf0 ;
+\par \plain\f2\fs8\cf0 
+\par \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  OnChange: TMenuChangeEvent;
+\par \pard \plain\f0\fs18\cf0 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 In ancestor classes the OnChange event handler is triggered in response to changes in the menu's structure. Since the user cannot change the menu structure directly in TPJColourPopupMenu, this event is disabled and should never be triggered.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 It is possible to assign an event handler to the event, but it will never be called.
+\par \page 
+#{\footnote {#}IDH_CPM_ONCREATEMENUITEM}
+${\footnote {$}TPJColourPopupMenu.OnCreateMenuItem}
+K{\footnote {K}OnCreateMenuItem,TPJColourPopupMenu;TPJColourPopupMenu,OnCreateMenuItem;OnCreateMenuItem}
+A{\footnote {A}TPJColourPopupMenu_OnCreateMenuItem;OnCreateMenuItem_event;OnCreateMenuItem}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.OnCreateMenuItem\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Occurs when a colour menu item is being created.
+\par 
+\par \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TPJCreateColourMenuItemEvent = procedure (Sender: TObject;
+\par   MenuItem: {\strike TMenuItem}{\v !AL(TMenuItem_object,1)}; Colour: {\strike TColor}{\v !AL(TColor,1)}) \plain\f2\fs18\cf0\b of object\plain\f2\fs18\cf0 ;
+\par \plain\f2\fs8\cf0 
+\par \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  OnCreateMenuItem: {\strike TPJCreateColourMenuItemEvent}{\v IDH_TPJCREATECOLOURMENUITEMEVENT};\plain\f0\fs18\cf0 
+\par 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 This event is triggered for each menu item in the colour menu just after the menu item has been created and before it is displayed. Provide an event handler to customise the menu items that are displayed. A reference to the menu item is provided by the \plain\f0\fs18\cf0\i MenuItem\plain\f0\fs18\cf0  parameter. The colour that the menu item represents is given by the \plain\f0\fs18\cf0\i Colour\plain\f0\fs18\cf0  parameter.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Any of \plain\f0\fs18\cf0\i MenuItem\plain\f0\fs18\cf0 's properties can be changed, but great care should be taken if properties required by the component are changed. The menu item properties that are used by TPJColourPopupMenu are:
+\par \plain\f0\fs8\cf0 
+\par \pard \fi-2000 \li2000 \tx2000 \plain\f0\fs18\cf0\b Property\tab Use in TPJColourPopupMenu\plain\f0\fs18\cf0 
+\par \pard \fi-2000 \li2000 \tx2000 \brdrt \brdrs \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \fi-2000 \li2000 \tx2000 {\strike Bitmap}{\v !AL(TMenuItem_Bitmap,1)}\tab Used when {\strike DisplayStyle}{\v IDH_CPM_DISPLAYSTYLE} is dsBoth to display the colour swatch.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike Break}{\v !AL(TMenuItem_Break,1)}\tab Used to break the menu into the number of columns per the {\strike MenuColumns}{\v IDH_CPM_MENUCOLUMNS} property
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike Caption}{\v !AL(TMenuItem_Caption,1)}\tab Used to store the caption text if text is being displayed (i.e. {\strike DisplayStyle}{\v IDH_CPM_DISPLAYSTYLE} is not dsColourOnly. Update the caption to translate the menu items to other languages.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike Checked}{\v !AL(TMenuItem_Checked,1)}\tab Used to check the selected colour when {\strike CheckSelectedColour}{\v IDH_CPM_CHECKSELECTEDCOLOUR} is True.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike HelpContext}{\v !AL(TMenuItem_HelpContext,1)}\tab Always set to the same value as the component's {\strike HelpContext}{\v !AL(TPopupMenu_HelpContext,1)} property. Change this to provide different help for each menu item.
+\par \pard \fi-2000 \li2000 \tx2000 \brdrb \brdrs \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0\i MenuItem's\plain\f0\fs18\cf0  events are reserved for use by the component. Any handlers assigned to the events are ignored by TPJColourPopupMenu. The component provides equivalent events of its own for each of the menu item events as follows:
+\par \plain\f0\fs8\cf0 
+\par \pard \fi-2000 \li2000 \tx2000 \plain\f0\fs18\cf0\b TMenuItem event\plain\f0\fs18\cf0 \tab \plain\f0\fs18\cf0\b Related TPJColourPopupMenu event\plain\f0\fs18\cf0 
+\par \pard \fi-2000 \li2000 \tx2000 \brdrt \brdrs \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \fi-2000 \li2000 \tx2000 {\strike OnClick}{\v !AL(TMenuItem_OnClick,1)}\tab {\strike OnSelectColour}{\v IDH_CPM_ONSELECTCOLOUR} - use the SelectedColour property to identify the menu item that was clicked.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike OnDrawItem}{\v !AL(TMenuItem_OnDrawItem,1)}\tab {\strike OnDrawMenuItem}{\v IDH_CPM_ONDRAWMENUITEM} (triggered only if {\strike OwnerDraw}{\v IDH_CPM_OWNERDRAW} is True) - us\plain\f1\fs18\cf0 e\plain\f0\fs18\cf0  the event's \plain\f0\fs18\cf0\i Colour\plain\f0\fs18\cf0  parameter to identify the related menu item.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike OnMeasureItem}{\v !AL(TMenuItem_OnMeasureItem,1)}\tab {\strike OnMeasureMenuItem}{\v IDH_CPM_ONMEASUREMENUITEM} (triggered if {\strike OwnerDraw}{\v IDH_CPM_OWNERDRAW} is True) - us\plain\f1\fs18\cf0 e\plain\f0\fs18\cf0  the event's \plain\f0\fs18\cf0\i Colour\plain\f0\fs18\cf0  parameter to identify the related menu item.
+\par \pard \fi-2000 \li2000 \tx2000 \brdrb \brdrs \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard 
+\par \page 
+#{\footnote {#}IDH_CPM_ONDRAWMENUITEM}
+${\footnote {$}TPJColourPopupMenu.OnDrawMenuItem}
+K{\footnote {K}OnDrawMenuItem,TPJColourPopupMenu;TPJColourPopupMenu,OnDrawMenuItem;OnDrawMenuItem}
+A{\footnote {A}TPJColourPopupMenu_OnDrawMenuItem;OnDrawMenuItem_event;OnDrawMenuItem}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.OnDrawMenuItem\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}          {\strike See also}{\v !AL(TPJColourPopupMenu_OnMeasureMenuItem;TPJColourPopupMenu_OwnerDraw)}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Occurs when a colour menu item needs to be redisplayed.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TPJDrawColourMenuItemEvent = \plain\f2\fs18\cf0\b procedure\plain\f2\fs18\cf0  (Sender: TObject;
+\par   MenuItem: {\strike TMenuItem}{\v !AL(TMenuItem_object,1)}; ACanvas: {\strike TCanvas}{\v !AL(TCanvas_object,1)}; ARect: {\strike TRect}{\v !AL(TRect,1)}; 
+\par   Selected: Boolean; Colour: {\strike TColor}{\v !AL(TColor,1)}) \plain\f2\fs18\cf0\b of object\plain\f2\fs18\cf0 ;
+\par 
+\par \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  OnDrawMenuItem: {\strike TPJDrawColourMenuItemEvent}{\v IDH_TPJDRAWCOLOURMENUITEMEVENT};
+\par \pard \plain\f0\fs18\cf0 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Use OnDrawMenuItem to write a handler for drawing colour menu items. The event only occurs when the {\strike OwnerDraw}{\v IDH_CPM_OWNERDRAW} property is true. OnDrawMenuItem is triggered once for each colour menu item.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 OnDrawMenuItem is of type TPJDrawColourMenuItemEvent. OnDrawMenuItem passes \plain\f1\fs18\cf0 six \plain\f0\fs18\cf0 parameters to its handler describing the item to be drawn:
+\par \plain\f0\fs8\cf0 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs18\cf0 \bullet \tab \plain\f1\fs18\cf0\i Sender\plain\f0\fs18\cf0  - refers to the TPJColourPopupMenu\plain\f1\fs18\cf0  component that triggered the event.\plain\f0\fs18\cf0 
+\par \bullet \tab \plain\f0\fs18\cf0\i MenuItem\plain\f0\fs18\cf0  - refers to the menu item to be drawn (do not change the properties of this menu item).
+\par \bullet \tab \plain\f0\fs18\cf0\i ACanvas\plain\f0\fs18\cf0  - the canvas on which the menu item is to be drawn.
+\par \bullet \tab \plain\f0\fs18\cf0\i ARect\plain\f0\fs18\cf0  - the rectangle in which to draw.
+\par \bullet \tab \plain\f0\fs18\cf0\i Selected\plain\f0\fs18\cf0  - whether the menu item is currently selected
+\par \bullet \tab \plain\f0\fs18\cf0\i Colour\plain\f0\fs18\cf0  - the colour represented by the menu item.
+\par \pard \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 The size of the rectangle that contains the menu item is determined by the values set by the user in the {\strike OnMeasureMenuItem}{\v IDH_CPM_ONMEASUREMENUITEM} event handler.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Use the {\strike CheckSelectedColour}{\v IDH_CPM_CHECKSELECTEDCOLOUR} property in cojunction with the {\strike SelectedColour}{\v IDH_CPM_SELECTEDCOLOUR} property to determine whether the menu item should be checked (CheckSelectedColour will be true and SelectedColour will equal the event handler's Colour parameter if the item is to be checked).
+\par \page 
+#{\footnote {#}IDH_CPM_ONMEASUREMENUITEM}
+${\footnote {$}TPJColourPopupMenu.OnMeasureMenuItem}
+K{\footnote {K}OnMeasureMenuItem,TPJColourPopupMenu;TPJColourPopupMenu,OnMeasureMenuItem;OnMeasureMenuItem}
+A{\footnote {A}TPJColourPopupMenu_OnMeasureMenuItem;OnMeasureMenuItem_event;OnMeasureMenuItem}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.OnMeasureMenuItem\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}          {\strike See also}{\v !AL(TPJColourPopupMenu_OnDrawMenuItem;TPJColourPopupMenu_OwnerDraw)}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Occurs on owner-draw colour pop-up menus to determine menu item size before the menu is drawn.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TPJMeasureColourMenuItemEvent = \plain\f2\fs18\cf0\b procedure\plain\f2\fs18\cf0  (Sender: TObject;
+\par   MenuItem: {\strike TMenuItem}{\v !AL(TMenuItem_object,1)}; ACanvas: {\strike TCanvas}{\v !AL(TCanvas_object,1)}; 
+\par   \plain\f2\fs18\cf0\b var\plain\f2\fs18\cf0  Width, Height: Integer; Colour: {\strike TColor}{\v !AL(TColor,1)}) \plain\f2\fs18\cf0\b of object\plain\f2\fs18\cf0 ;
+\par \plain\f2\fs8\cf0 
+\par \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  OnMeasureMenuItem: {\strike TPJMeasureColourMenuItemEvent}{\v IDH_TPJMEASURECOLOURMENUITEMEVENT};\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Write an OnMeasureItem event handler to indicate the size of owner-draw colour menu items. It is called once for each of the colour menu items to be drawn. The event occurs only if the {\strike OwnerDraw}{\v IDH_CPM_OWNERDRAW} property is true. 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 OnDrawMenuItem passes \plain\f1\fs18\cf0 six\plain\f0\fs18\cf0  parameters to its handler describing the item to be measured:
+\par \plain\f0\fs8\cf0 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs18\cf0 \bullet \tab \plain\f1\fs18\cf0\i Sender\plain\f0\fs18\cf0  - refers to the TPJColourPopupMenu\plain\f1\fs18\cf0  component that triggered the event.\plain\f0\fs18\cf0 
+\par \bullet \tab \plain\f0\fs18\cf0\i MenuItem\plain\f0\fs18\cf0  - refers to the menu item to be measured (do not change the properties of this menu item).
+\par \bullet \tab \plain\f0\fs18\cf0\i ACanvas\plain\f0\fs18\cf0  - the canvas on which the menu item is to be drawn.
+\par \bullet \tab \plain\f0\fs18\cf0\i Width\plain\f0\fs18\cf0  - set this value to the required width of the menu item (determines the width of the rectangle passed to the OnDrawMenuItem event handler).
+\par \bullet \tab \plain\f0\fs18\cf0\i Height\plain\f0\fs18\cf0  - set this value to the required height of the menu item (determines the height of the rectangle passed to the OnDrawMenuItem event handler).
+\par \bullet \tab \plain\f0\fs18\cf0\i Colour\plain\f0\fs18\cf0  - the colour of the menu item to be drawn.
+\par \page 
+#{\footnote {#}IDH_CPM_ONPOPUP}
+${\footnote {$}TPJColourPopupMenu.OnPopup}
+K{\footnote {K}OnPopup,TPJColourPopupMenu;TPJColourPopupMenu,OnPopup;OnPopup}
+A{\footnote {A}TPJColourPopupMenu_OnPopup;OnPopup_event;OnPopup}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.OnPopup\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Occurs just before the colour pop-up menu appears.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  OnPopup: {\strike TNotifyEvent}{\v !AL(TNotifyEvent,1)};\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Write an OnPopup event handler to take specific action just before the pop-up menu appears.
+\par \page 
+#{\footnote {#}IDH_CPM_ONSELECTCOLOUR}
+${\footnote {$}TPJColourPopupMenu.OnSelectColour}
+K{\footnote {K}OnSelectColour,TPJColourPopupMenu;TPJColourPopupMenu,OnSelectColour;OnSelectColour}
+A{\footnote {A}TPJColourPopupMenu_OnSelectColour;OnSelectColour_event;OnSelectColour}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourPopupMenu.OnSelectColour\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS}          {\strike See also}{\v !AL(TPJColourPopupMenu_SelectedColour)}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Occurs when the user selects a colour on the pop-up menu.
+\par 
+\par \pard \keep \plain\f2\fs18\cf0\b property\plain\f2\fs18\cf0  OnSelectColour: {\strike TNotifyEvent}{\v !AL(TNotifyEvent,1)};\plain\f0\fs18\cf0 
+\par \pard 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 This event is triggered when the user selects a colour on the pop-up menu. Retrieve the selected colour by accessing the component's {\strike SelectedColour}{\v IDH_CPM_SELECTEDCOLOUR} property.
+\par \page 
+#{\footnote {#}IDH_CPM_CE}
+${\footnote {$}TPJColourPopupMenu Component Editor}
+K{\footnote {K}Colour menu designer;TPJColourPopupMenu,Colour menu designer;}
+A{\footnote {A}TPJColourPopupMenuCE}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b Colour Menu Designer\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Use this component editor to quickly set the key properties of a {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS} component. To access the editor at design time, simply double click the component or select the component and right click it, then choose "Colour menu designer" from the pop-up menu.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 The following properties can be set using the designer's controls:
+\par \plain\f0\fs8\cf0 
+\par \pard \fi-2000 \li2000 \tx2000 \plain\f0\fs18\cf0\b Property\plain\f0\fs18\cf0 \tab \plain\f0\fs18\cf0\b Control\plain\f0\fs18\cf0 
+\par \pard \fi-2000 \li2000 \tx2000 \brdrt \brdrs \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \fi-2000 \li2000 \tx2000 {\strike DisplayStyle}{\v IDH_CPM_DISPLAYSTYLE}\tab Select the required style from the \plain\f0\fs18\cf0\i Display style\plain\f0\fs18\cf0  drop-down list.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike MenuColumns}{\v IDH_CPM_MENUCOLUMNS}\tab Choose the required number of columns from the \plain\f0\fs18\cf0\i Menu columns\plain\f0\fs18\cf0  drop-down list.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike CheckSelectedColour}{\v IDH_CPM_CHECKSELECTEDCOLOUR}\tab Check the \plain\f0\fs18\cf0\i Check selected colour\plain\f0\fs18\cf0  check box if you want the currently selected colour to be checked in the colour menu.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike BitmapHeight}{\v IDH_CPM_BITMAPHEIGHT}\tab Choose the required bitmap height by altering the value in the \plain\f0\fs18\cf0\i Bitmap height\plain\f0\fs18\cf0  edit box using the up-down arrows. This control is only available when a "Colour only" display style is selected.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike BitmapWidth}{\v IDH_CPM_BITMAPWIDTH}\tab Choose the required bitmap width by altering the value in the \plain\f0\fs18\cf0\i Bitmap height\plain\f0\fs18\cf0  edit box using the up-down arrows. This control is only available when a "Colour only" display style is selected.
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 {\strike SelectedColour}{\v IDH_CPM_SELECTEDCOLOUR}\tab Click the \plain\f0\fs18\cf0\i Click to test\plain\f0\fs18\cf0  button and select the required colour from the menu. The selected colour is shown on the button face.
+\par \pard \fi-2000 \li2000 \tx2000 \brdrb \brdrs \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \fi-2000 \li2000 \tx2000 \plain\f0\fs8\cf0 
+\par \pard \plain\f0\fs18\cf0 Once all the required properties have been set you can check the appearance of the menu by clicking the \plain\f0\fs18\cf0\i Click to test\plain\f0\fs18\cf0  button. 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Once all choices have been made click \plain\f0\fs18\cf0\i OK\plain\f0\fs18\cf0  to accept the changes or \plain\f0\fs18\cf0\i Cancel\plain\f0\fs18\cf0  to leave the component properties unchanged.\plain\f0\fs20\cf0 
+\par \page 
+#{\footnote {#}IDH_ECPM_CLASS}
+${\footnote {$}EPJColourPopupMenu}
+K{\footnote {K}EPJColourPopupMenu}
+A{\footnote {A}EPJColourPopupMenu_object;EPJColourPopupMenu}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b EPJColourPopupMenu\plain\f0\fs18\cf0 
+\par \plain\f0\fs12\cf0 
+\par \plain\f0\fs18\cf0 {\ul Heirachy}{\v IDH_ECPM_HEIRACHY}          {\ul Properties}{\v IDH_ECPM_PROPERTIES}          {\ul Methods}{\v IDH_ECPM_METHODS}
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard Exceptions raised by {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS} components.
+\par 
+\par \plain\f0\fs18\cf0\b Unit\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 PJColourPopupMenu
+\par 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 Any error that occurs in TPJColourPopupMenu code generates a EPJColourPopupMenu exception. EPJColourPopupMenu provides exactly the same properties and methods as the {\strike Exception}{\v !AL(Exception_object,1)} class.
+\par \page 
+#{\footnote {#}IDH_ECPM_HEIRACHY}
+${\footnote {$}EPJColourPopupMenu heirachy}
+
+\pard \plain \plain\f0\fs18\cf0\b Heirachy\plain\f0\fs18\cf0 
+\par 
+\par {\strike TObject}{\v !AL(TObject_object,1)}
+\par     |
+\par {\strike Exception}{\v !AL(Exception_object,1)}
+\par \page 
+#{\footnote {#}IDH_ECPM_PROPERTIES}
+${\footnote {$}EPJColourPopupMenu properties}
+
+\pard \plain \plain\f0\fs18\cf0\b Properties\plain\f0\fs18\cf0 
+\par 
+\par All properties of EPJColourPopupMenu are inherited without change from the {\strike Exception}{\v !AL(Exception_object,1)} class.
+\par \page 
+#{\footnote {#}IDH_ECPM_METHODS}
+${\footnote {$}EPJColourPopupMenu methods}
+
+\pard \plain \plain\f0\fs18\cf0\b Methods\plain\f0\fs18\cf0 
+\par 
+\par All methods of EPJColourPopupMenu are inherited without change from the {\strike Exception}{\v !AL(Exception_object,1)} class.
+\par \page 
+#{\footnote {#}IDH_TPJCOLOURMENUDISPLAYSTYLE}
+${\footnote {$}TPJColourMenuDisplayStyle}
+K{\footnote {K}TPJColourMenuDisplayStyle}
+A{\footnote {A}TPJColourMenuDisplayStyle}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourMenuDisplayStyle\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \plain\f0\fs18\cf0\b Unit\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 PJColourPopupMenu
+\par 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 This is the type of the {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS} component's {\strike DisplayStyle}{\v IDH_CPM_DISPLAYSTYLE} property. It is declared as:
+\par \plain\f0\fs8\cf0 
+\par \pard \keep \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TPJColourMenuDisplayStyle = (
+\par   dsTextOnly,     // displays text only (as standard menu)
+\par   dsColourOnly,   // displays colours only
+\par   dsBoth,         // displays both text and colour
+\par   dsOwnerDraw     // user takes control over display
+\par );\plain\f0\fs18\cf0 
+\par \pard \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 See the property's help topic for further details.
+\par \page 
+#{\footnote {#}IDH_TPJCOLOURMENUCOLUMNS}
+${\footnote {$}TPJColourMenuColumns}
+K{\footnote {K}TPJColourMenuColumns}
+A{\footnote {A}TPJColourMenuColumns}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJColourMenuColumns\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \plain\f0\fs18\cf0\b Unit\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 PJColourPopupMenu
+\par 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 This is the type of the {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS} component's {\strike MenuColumns}{\v IDH_CPM_MENUCOLUMNS} property. It is declared as:
+\par \plain\f0\fs8\cf0 
+\par \pard \keep \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TPJColourMenuColumns = (
+\par   mc1,   // one column of sixteen colours
+\par   mc2,   // two columns of eight colours each
+\par   mc4,   // four columns of four colours each
+\par   mc8    // eight columns of two colours each
+\par );
+\par \pard \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 See the property's help topic for further details.\plain\f2\fs18\cf0 
+\par \page 
+#{\footnote {#}IDH_TPJCREATECOLOURMENUITEMEVENT}
+${\footnote {$}TPJCreateColourMenuItemEvent}
+K{\footnote {K}TPJCreateColourMenuItemEvent}
+A{\footnote {A}TPJCreateColourMenuItemEvent}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJCreateColourMenuItemEvent\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \plain\f0\fs18\cf0\b Unit\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 PJColourPopupMenu
+\par 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 The type of event handler used by the {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS} component's {\strike OnCreateMenuItem}{\v IDH_CPM_ONCREATEMENUITEM} event. The type is declared as:
+\par \plain\f0\fs8\cf0 
+\par \pard \keep \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TPJCreateColourMenuItemEvent = \plain\f2\fs18\cf0\b procedure\plain\f2\fs18\cf0  (Sender: TObject;
+\par \pard   MenuItem: {\strike TMenuItem}{\v !AL(TMenuItem_object,1)}; Colour: {\strike TColor}{\v !AL(TColor,1)}) \plain\f2\fs18\cf0\b of object\plain\f2\fs18\cf0 ;\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 See the event's help topic for further information and an explanation of the parameters.
+\par \page 
+#{\footnote {#}IDH_TPJDRAWCOLOURMENUITEMEVENT}
+${\footnote {$}TPJDrawColourMenuItemEvent}
+K{\footnote {K}TPJDrawColourMenuItemEvent}
+A{\footnote {A}TPJDrawColourMenuItemEvent}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJDrawColourMenuItemEvent\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \plain\f0\fs18\cf0\b Unit\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 PJColourPopupMenu
+\par 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 The type of event handler used by the {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS} component's {\strike OnDrawMenuItem}{\v IDH_CPM_ONDRAWMENUITEM} event. The type is declared as:
+\par \plain\f0\fs8\cf0 
+\par \pard \keep \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TPJDrawColourMenuItemEvent = \plain\f2\fs18\cf0\b procedure\plain\f2\fs18\cf0  (Sender: TObject;
+\par   MenuItem: {\strike TMenuItem}{\v !AL(TMenuItem_object,1)}; ACanvas: {\strike TCanvas}{\v !AL(TCanvas_object,1)}; ARect: {\strike TRect}{\v !AL(TRect,1)}; 
+\par   Selected: Boolean; Colour: {\strike TColor}{\v !AL(TColor,1)}) \plain\f2\fs18\cf0\b of object\plain\f2\fs18\cf0 ;\plain\f0\fs18\cf0 
+\par \pard \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 See the event's help topic for further information and an explanation of the parameters.
+\par \page 
+#{\footnote {#}IDH_TPJMEASURECOLOURMENUITEMEVENT}
+${\footnote {$}TPJMeasureColourMenuItemEvent}
+K{\footnote {K}TPJMeasureColourMenuItemEvent}
+A{\footnote {A}TPJMeasureColourMenuItemEvent}
+
+\pard \plain \pard \keepn \plain\f0\fs8\cf0 
+\par \plain\f0\fs22\cf2\b TPJMeasureColourMenuItemEvent\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0  \plain\f0\fs18\cf0 
+\par \pard \plain\f0\fs18\cf0\b Unit\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 PJColourPopupMenu
+\par 
+\par \plain\f0\fs18\cf0\b Description\plain\f0\fs18\cf0 
+\par \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 The type of event handler used by the {\strike TPJColourPopupMenu}{\v IDH_CPM_CLASS} component's {\strike OnMeasureMenuItem}{\v IDH_CPM_ONMEASUREMENUITEM} event. The type is declared as:
+\par \plain\f0\fs8\cf0 
+\par \pard \keep \plain\f2\fs18\cf0\b type\plain\f2\fs18\cf0  TPJMeasureColourMenuItemEvent = \plain\f2\fs18\cf0\b procedure\plain\f2\fs18\cf0  (Sender: TObject;
+\par   MenuItem: {\strike TMenuItem}{\v !AL(TMenuItem_object,1)}; ACanvas: {\strike TCanvas}{\v !AL(TCanvas_object,1)}; 
+\par   \plain\f2\fs18\cf0\b var\plain\f2\fs18\cf0  Width, Height: Integer; Colour: {\strike TColor}{\v !AL(TColor,1)}) \plain\f2\fs18\cf0\b of object\plain\f2\fs18\cf0 ;
+\par \pard \plain\f0\fs8\cf0 
+\par \plain\f0\fs18\cf0 See the event's help topic for further information and an explanation of the parameters.
+\par \page 
+}

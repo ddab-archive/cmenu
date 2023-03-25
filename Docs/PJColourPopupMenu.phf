@@ -1,0 +1,137 @@
+@PROJECT_NAME           Colour Popup Menu
+@PROJECT_DESC           A component that provides a popup menu that displays
+                        menu items for the sixteen common colours in a
+                        traditional menu style or as a colour palette. Component
+                        and property editors are also provided.
+@ROOT                   .\
+@AUTHOR                 Peter Johnson, LLANARTH, Ceredigion, Wales, UK
+@WEBSITE                http://www.delphidabbler.com/
+@LEGAL_NOTICE           This code is distributed under the Mozilla Public
+                        License and other open source licenses.
+@COPYRIGHT              © Peter D Johnson, 2001-2008.
+@OWNER                  delphiDabbler.com
+@HISTORY(
+  @REVISION(
+    @VERSION            1.0
+    @DATE               06/05/2001
+    @COMMENTS           Original version
+    @COMPILERS          + Delphi 4
+                        + Help Topic Author 1.7.5
+                        + Microsoft Help Workshop 4
+    @FILES(
+      @NEW(
+        @FILE           PJColourPopupMenu.pas
+        @VERSION        1.0
+      )
+      @NEW(
+        @FILE           PJColourPopupMenuEd.pas
+        @VERSION        1.0
+      )
+      @NEW(
+        @FILE           PJColourPopupMenu.dcr
+        @COMMENTS       Resource file containing resource palette glyph for
+                        component.
+        @DATE           06/05/2001
+      )
+      @NEW(
+        @FILE           Help\PJColourPopupMenu.hap
+        @DATE           06/05/2001
+        @COMMENTS       Help topic author file
+      )
+      @NEW(
+        @FILE           Help\PJColourPopupMenu.hpj
+        @VERSION        1.0
+      )
+      @NEW(
+        @FILE           Help\PJColourPopupMenu.bmp
+        @DATE           06/05/2001
+        @COMMENTS       Bitmap representing component glyph used in help file.
+      )
+    )
+  )
+  @REVISION(
+    @VERSION            1.1
+    @DATE               10/09/2003
+    @COMMENTS           + Revised to make compatible with Delphi 6 & 7. All
+                          design time code has been separated out into separated
+                          units.
+                        + Demo program added.
+    @COMPILERS          + Help Topic Author 1.7.5
+                        + Microsoft Help Workshop 4
+    @FILES(
+      @UPDATED(
+        @FILE           PJColourPopupMenu.pas
+        @VERSION        1.1
+      )
+      @UPDATED(
+        @FILE           PJColourPopupMenuEd.pas
+        @VERSION        2.0
+      )
+      @UPDATED(
+        @FILE           Help\PJColourPopupMenu.hpj
+        @VERSION        1.1
+      )
+      @NEW(
+        @FILE           Demo\ColourPopupMenuDemo.dpr
+        @VERSION        1.0
+        @COMMENTS       Demo project file.
+        @DATE           10/09/2003
+      )
+      @NEW(
+        @FILE           Demo\FmColourPopupMenuDemo.pas
+        @VERSION        1.0
+        @COMMENTS       Contains main window and all program logic.
+        @DATE           10/09/2003
+      )
+    )
+  )
+  @REVISION(
+    @VERSION            1.2
+    @DATE               17/08/2008
+    @COMPILERS          + Help Topic Author 1.17.0
+                        + Microsoft Help Workshop 4
+    @COMMENTS           + Fixed bugs that (1) prevented installation with Delphi
+                          2005 and later and (2) was failing to display selected
+                          colour in component editor.
+                        + Moved component's colour names from string literals
+                          into resource string to enable localisation.
+                        + Carried out some refactoring.
+                        + Fixed typos and changed copyright date in help file.
+                        + Changed to Mozilla Public License.
+    @FILES(
+      @UPDATED(
+        @FILE           PJColourPopupMenu.pas
+        @VERSION        1.2
+      )
+      @UPDATED(
+        @FILE           PJColourPopupMenuEd.pas
+        @VERSION        2.1
+      )
+      @UPDATED(
+        @FILE           Demo\ColourPopupMenuDemo.dpr
+        @VERSION        1.1
+      )
+      @UPDATED(
+        @FILE           Demo\FmDemo.pas
+        @VERSION        1.1
+        @RENAMED_FROM   Demo\FmColourPopupMenuDemo.pas
+      )
+      @NEW(
+        @FILE           Help\PJColourPopupMenu.als
+        @DATE           17/08/2008
+        @COMMENTS       A-link keyword file used by Delphi 6 and 7.
+      )
+      @UPDATED(
+        @FILE           Help\PJColourPopupMenu.hap
+        @DATE           17/08/2008
+        @COMMENTS       + Corrected some typos.
+                        + Converted file to latest format.
+                        + Added further hot links.
+      )
+      @UPDATED(
+        @FILE           Help\PJColourPopupMenu.hpj
+        @VERSION        1.2
+      )
+    )
+  )
+)

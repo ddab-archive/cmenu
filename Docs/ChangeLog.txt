@@ -1,0 +1,27 @@
+Release 1.2 of 17 August 2008
+PJColourPopupMenu v1.2 of 17 August 2008
+
++ Fixed bugs in component editor:
+  - One prevented installation with Delphi 2005 and later.
+  - Second was not displaying selected colour in component editor.
++ Moved component's colour names from string literals into resource string to enable localisation.
++ Carried out some refactoring.
++ Fixed typos and changed copyright date in help file.
++ Changed to Mozilla Public License.
+
+
+Release 1.1 of 10 September 2003
+PJColourPopupMenu v1.1 of 10 September 2003
+
++ Revised to make compatible with Delphi 6 & 7: all design time and registration code from main component unit has been moved into property editor unit.
++ Component palette name changed from "PJSoft" to "DelphiDabbler".
+
+
+Release 1.0 of 06 May 2001
+PJColourPopupMenu v1.0 of 06 May 2001
+
++ Original release including:
+  - Component and property editors.
+  - Component editor.
+  - Demo project.
+  - Help file.
